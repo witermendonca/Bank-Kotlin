@@ -2,12 +2,13 @@ abstract class FuncionarioAdimin(
     nome: String,
     cpf: String,
     salario: Double,
-    senha: String
+    protected val senha: String
 ) : Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario,
-) {
-
-    abstract fun autentica(senha: String): Boolean
+), Autenticavel {
+    override fun autentica(senha: String): Boolean {
+        return this.senha == senha
+    }
 }
