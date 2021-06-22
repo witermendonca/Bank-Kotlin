@@ -1,9 +1,9 @@
-open class Conta(
+abstract class Conta(
     val titular: String,
     val numeroConta: Int
 ) {
     var saldo = 0.0
-        private set
+        protected set
 
 
 //    fun getSaldo(): Double {
@@ -21,12 +21,7 @@ open class Conta(
         println("Saldo Conta $saldo")
     }
 
-    open fun sacar(valor: Double) {
-        this.saldo -= valor
-        println("Saque conta: $titular")
-        println("Valor saque: $valor")
-        println("Saldo Conta $saldo")
-    }
+    abstract fun sacar(valor: Double)
 
     fun tranferir(valor: Double, conta: Conta) {
         sacar(valor)

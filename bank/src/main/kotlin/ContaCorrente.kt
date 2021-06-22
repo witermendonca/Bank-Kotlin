@@ -5,9 +5,11 @@ class ContaCorrente(
     titular = titular,
     numeroConta = numeroConta
 ) {
-
     override fun sacar(valor: Double) {
         val valorTaxa = valor + 0.1
-        super.sacar(valorTaxa)
+        this.saldo -= valorTaxa
+        println("Saque conta: $titular")
+        println("Valor saque: $valor")
+        println("Saldo Conta $saldo")
     }
 }

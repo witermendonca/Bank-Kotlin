@@ -1,6 +1,6 @@
 fun testaClasse() {
 
-    var contaWiter = Conta("Witer Mendonça", 1)
+    var contaWiter = ContaPoupanca("Witer Mendonça", 1)
 //    contaWiter.titular = "Witer Mendonça"
 //    contaWiter.numeroConta = 1
     contaWiter.depositar(300.0)
@@ -10,7 +10,7 @@ fun testaClasse() {
     contaWiter.depositar(300.0)
     contaWiter.sacar(200.0)
 
-    var conta2 = Conta("João José", 1)
+    var conta2 = ContaCorrente("João José", 1)
 //    conta2.titular = "João José"
 //    conta2.numeroConta = 2
     conta2.depositar(300.0)

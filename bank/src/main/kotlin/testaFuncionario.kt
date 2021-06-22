@@ -1,13 +1,13 @@
 fun testaFuncionario() {
-    val funcionario = Funcionario(
+    val analista = Analista(
         "Witer Mendonça",
         "392.934.323-00",
         2500.0
     )
 
-    println("Funcionario: ${funcionario.nome}")
-    println("Bonificação: ${funcionario.bonificacao()}")
-    println("Salario Total: ${funcionario.salarioTotal()}")
+    println("${analista.cargo}: ${analista.nome}")
+    println("Bonificação: ${analista.bonificacao()}")
+    println("Salario Total: ${analista.salarioTotal()}")
 
 
     val gerente = Gerente(
@@ -16,7 +16,7 @@ fun testaFuncionario() {
         12500.0
     )
 
-    println("Gerente: ${gerente.nome}")
+    println("${gerente.cargo}: ${gerente.nome}")
     println("Bonificação: ${gerente.bonificacao()}")
     println("Salario Total: ${gerente.salarioTotal()}")
 
@@ -26,13 +26,13 @@ fun testaFuncionario() {
         22500.0
     )
 
-    println("Diretor: ${diretor.nome}")
+    println("${diretor.cargo}: ${diretor.nome}")
     println("Bonificação: ${diretor.bonificacao()}")
     println("PLR: ${diretor.plr}")
     println("Salario Total: ${diretor.salarioTotal()}")
 
     val calculadoraBonificacao = CalculadoraBonificacao()
-    calculadoraBonificacao.registra(funcionario)
+    calculadoraBonificacao.registra(analista)
     calculadoraBonificacao.registra(gerente)
     calculadoraBonificacao.registra(diretor)
 
