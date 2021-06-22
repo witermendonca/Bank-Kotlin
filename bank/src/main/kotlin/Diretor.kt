@@ -2,16 +2,20 @@ class Diretor(
     nome: String,
     cpf: String,
     salario: Double,
-    val plr: Double = salario * 0.2,
-    cargo: String = "Diretor"
-) : Funcionario(
+    val senha: String
+) : FuncionarioAdimin(
     nome = nome,
     cpf = cpf,
     salario = salario,
-    cargo = cargo
+    senha = senha
 ) {
+    val plr: Double = salario * 0.2
 
     override fun bonificacao(): Double = salario * 0.3
 
     override fun salarioTotal(): Double = this.salario + bonificacao() + plr
+
+    override fun autentica(senha: String): Boolean {
+        return this.senha == senha
+    }
 }

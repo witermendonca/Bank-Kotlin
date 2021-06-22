@@ -5,7 +5,9 @@ fun main() {
 
 //    testaFuncionario()
 
-    testaTiposConta()
+//    testaTiposConta()
+
+    testaAutenticacao()
 
 
 }
