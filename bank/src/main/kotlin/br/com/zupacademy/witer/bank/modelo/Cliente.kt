@@ -10,4 +10,8 @@ class Cliente(
     override fun autentica(senha: String): Boolean {
         return this.senha == senha
     }
+
+    override fun toString(): String {
+        return "Cliente(nome='$nome', cpf='$cpf', endereco=${endereco.toString()})"
+    }
 }

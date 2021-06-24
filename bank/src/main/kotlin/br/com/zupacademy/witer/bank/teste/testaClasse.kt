@@ -21,7 +21,7 @@ fun testaClasse() {
     println("Numero da conta: ${conta2.numeroConta}, Titular: ${conta2.titular.nome}, Saldo: ${conta2.saldo}")
 
 
-    contaWiter.tranferir(100.0, conta2)
+    contaWiter.tranferir(100.0, conta2, "123456")
 
     println("Conta ${conta2.titular.nome} Saldo depois da Transferencia: ${conta2.saldo}")
 }
