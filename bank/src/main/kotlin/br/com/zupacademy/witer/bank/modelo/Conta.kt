@@ -59,7 +59,7 @@ abstract class Conta(
         contaDestino.depositar(valor)
         println("Conta destino tranferencia: ${contaDestino.titular.nome}")
     }
-    
+
 //    //delegação de implementação
 //    override fun autentica(senha: String): Boolean {
 //        return titular.autentica(senha)

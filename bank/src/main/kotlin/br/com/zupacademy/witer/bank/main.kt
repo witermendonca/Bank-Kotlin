@@ -1,5 +1,6 @@
-import br.com.zupacademy.witer.bank.teste.testaException
-import br.com.zupacademy.witer.bank.teste.testaExceptionSaldoInsuficiente
+import br.com.zupacademy.witer.bank.teste.array.testaArrayBigDecimal
+import br.com.zupacademy.witer.bank.teste.array.testaIntroArrays
+import br.com.zupacademy.witer.bank.teste.array.testaRanges
 
 fun main() {
 
@@ -17,8 +18,13 @@ fun main() {
 
 //    testaException()
 
-    testaExceptionSaldoInsuficiente()
+//    testaExceptionSaldoInsuficiente()
 
+//    testaIntroArrays()
+
+//    testaRanges()
+
+//    testaArrayBigDecimal()
 }
 
 
