@@ -1,6 +1,7 @@
 import br.com.zupacademy.witer.bank.teste.array.testaArrayBigDecimal
 import br.com.zupacademy.witer.bank.teste.array.testaIntroArrays
 import br.com.zupacademy.witer.bank.teste.array.testaRanges
+import br.com.zupacademy.witer.bank.teste.list.testaList
 
 fun main() {
 
@@ -25,6 +26,8 @@ fun main() {
 //    testaRanges()
 
 //    testaArrayBigDecimal()
+
+    testaList()
 }
 
 
